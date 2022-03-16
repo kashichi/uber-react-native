@@ -6,7 +6,6 @@ import { setDestination } from '../redux/slices/navSlice';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import NavFavourites from './NavFavourites';
 import { Icon } from 'react-native-elements';
-import { GOOGLE_MAPS_APIKEY } from './../Variables';
 
 const NavigateCard = ({ navigation }) => {
 
@@ -54,7 +53,7 @@ const NavigateCard = ({ navigation }) => {
                     }}
                     onFail={error => console.error(error)}
                     query={{
-                        key: "AIzaSyBqZ-vD4uFb6ZOzwyXfXZY61mT4d25soYs",
+                        key: "api_key",
                         language: 'en',
                     }}
                     nearbyPlacesAPI="GooglePlacesSearch"
