@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setDestination, setOrigin } from '../redux/slices/navSlice';
 import NavFavourites from '../components/NavFavourites';
 import { Icon } from 'react-native-elements';
-import {GOOGLE_MAPS_APIKEY}  from './../Variables';
 const HomeScreen = ({ navigation }) => {
     const dispatch = useDispatch();
 
